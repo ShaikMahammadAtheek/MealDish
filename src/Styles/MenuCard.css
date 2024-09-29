@@ -1,0 +1,93 @@
+/* .Menucart img{
+    width: 200px;
+}
+
+.Menucart button{
+    font-family: "Permanent Marker", cursive;
+    background-color: rgb(254, 178, 0);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.Menucart button:hover{
+    background-color: rgb(246, 187, 50);
+} */
+
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .menu-card p {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .menu-card-button {
+    font-family: "Halant", serif;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: rgb(254, 178, 0);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 370px;
+  }
+  
+  
+  .menu-card-button:hover {
+    background-color: #98b300;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-card {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .menu-card-button {
+      font-size: 20px;
+      padding: 8px 16px;
+      width: 300px;
+    }
+  
+    .menu-card p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-card-button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .menu-card p {
+      font-size: 14px;
+    }
+  }
+  

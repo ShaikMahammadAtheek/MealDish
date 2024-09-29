@@ -1,0 +1,73 @@
+/* RestaurantDetails.css */
+
+.restaurant-details-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .restaurant-info {
+    text-align: center;
+  }
+  
+  .menu-restaurant-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu-item-info {
+    flex: 1;
+  }
+  
+  .menu-item-info h4 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .menu-item-info h4 span {
+    font-size: 1rem;
+    color: #888;
+    margin-left: 10px;
+  }
+  
+  .menu-item-info p {
+    margin: 10px 0 0 0;
+    color: #555;
+  }
+  
+  .menu-item-image {
+    margin-left: 20px;
+  }
+  
+  .menu-item-image img {
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+  

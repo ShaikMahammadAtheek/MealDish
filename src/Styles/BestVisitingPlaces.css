@@ -1,0 +1,22 @@
+.tops{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+.tops h1{
+    margin-top: 10px;
+    text-align: start;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.PlacesCountainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+.items{
+    background-color: rgb(243, 235, 222);
+    border-radius: 12px;
+}

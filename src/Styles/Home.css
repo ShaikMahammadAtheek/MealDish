@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Permanent+Marker&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap');
+
+
+/* Top Div for headings*/
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Halant", serif;
+}
+
+/* Home card container */
+.home-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Logo Image */
+#navlogo img {
+    width: 300px;
+    height: 300px;
+    transition: width 0.3s ease, height 0.3s ease; /* Smooth scaling */
+}
+
+/* Home Items */
+.Home-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding-left: 0;
+}
+
+/* Home Items List */
+.Home-items li {
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Heading Style */
+h1 {
+    font-family: "Jacques Francois Shadow", serif;
+    font-size: 50px;
+}
+
+/* Middle paragraph */
+.middle_p {
+    font-family: "Halant", serif;
+    font-size: 20px;
+    color: rgb(128, 0, 62);
+}
+
+/* Home items button */
+.Home-items button {
+    font-family: "Halant", serif;
+    background-color: rgb(254, 178, 0);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Button hover state */
+.Home-items button:hover {
+    background-color: rgb(246, 187, 50);
+}
+
+/* Responsive Media Queries */
+
+/* For screen sizes 1024px and below */
+@media (max-width: 1024px) {
+    .home-card {
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    #navlogo img {
+        width: 300px;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .middle_p {
+        font-size: 18px;
+    }
+
+    .Home-items {
+        gap: 20px;
+    }
+
+    .Home-items button {
+        font-size: 22px;
+    }
+}
+
+/* For screen sizes 780px and below */
+@media (max-width: 780px) {
+    .home-card {
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #navlogo img {
+        width: 320px;
+        height: 230px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .middle_p {
+        font-size: 16px;
+    }
+
+    .Home-items button {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+/* For screen sizes 480px and below (mobile) */
+@media (max-width: 480px) {
+    .home-card {
+        padding: 5px;
+    }
+
+    #navlogo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .middle_p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .Home-items {
+        gap: 15px;
+    }
+
+    .Home-items button {
+        font-size: 18px;
+        padding: 6px;
+    }
+}
+
+
+/* Favroute food On your mind*/
+
+
+    
+/* .favfood{
+    overflow: scroll hidden;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    -ms-text-size-adjust: none;
+    outline: 0;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+.gZpgeF {
+    font-family: "Basis Grotesque Pro", Arial, sans-serif !important;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-weight: 300;
+    color: #282c3f;
+}
+
+.fonts-loaded {
+    font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+    letter-spacing: 0;
+}
+
+html {
+    text-size-adjust: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: arial, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -.5px;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    -ms-text-size-adjust: none;
+    outline: 0;
+}
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    -ms-text-size-adjust: none;
+    outline: 0;
+}
+
+.favfood::-webkit-scrollbar {
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .home-logo{
+    width: 250px;
+    height:500px;
+    mix-blend-mode: screen;
+} */
+
+ /* #navlogo{
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    position: relative;
+    display: inline-block;
+}
+
+#navlogo img{
+     height: 500px;
+    display: block;
+    mix-blend-mode: screen;  
+    background-color: transparent; 
+    display: block;
+}  */
+/* #navlogo img {
+    background-color: transparent;
+    width: 150px;
+    height: auto;
+  }
+  
+#navlogo img {
+    mix-blend-mode: multiply; 
+    background-color: white; 
+    width: 150px;
+    height: auto;
+  } */

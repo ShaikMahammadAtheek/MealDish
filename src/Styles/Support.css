@@ -1,0 +1,106 @@
+/* General container and title styles */
+.support-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .support-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #282c3f;
+    margin-bottom: 20px;
+  }
+  
+  /* Section styles */
+  .support-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title, .section-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #9c27b0;
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .section-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Link styles */
+  .link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section-specific styling for better visuals */
+  .help-section {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .faq-section, .chat-section, .contact-section, .tracking-section, .feedback-section, .queries-section {
+    padding: 15px;
+    border-left: 4px solid #9c27b0;
+    background-color: #fafafa;
+    border-radius: 8px;
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets and smaller screens */
+  @media (max-width: 768px) {
+    .support-container {
+      padding: 15px;
+    }
+  
+    .support-title {
+      font-size: 2rem;
+    }
+  
+    .section-title, .section-subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .section-description, .section-list {
+      font-size: 1rem;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .support-container {
+      padding: 10px;
+    }
+  
+    .support-title {
+      font-size: 1.8rem;
+    }
+  
+    .section-title, .section-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .section-description, .section-list {
+      font-size: 0.9rem;
+    }
+  
+    .section-list {
+      margin-left: 15px;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+/* About.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container Styling */
+ .aboutinfo {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: start;
+  }
+  
+  /* Heading Styling */
+  .aboutinfo h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-align: start;
+    color: #333;
+  }
+  
+  /* List Styling */
+  .aboutpoints {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Strong Element Styling */
+  strong {
+    color: #ff3434; /* Example color, adjust as needed */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    div {
+      padding: 0.5rem;
+    }
+  
+    h1 {
+      font-size: 1.25rem;
+    }
+  
+    li {
+      font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,165 @@
+
+
+.restaurant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .restaurant-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .restaurant-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .restaurant-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .topres h1{
+    margin-top: 10px;
+    text-align: start;
+    font-size: 35px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+.restaurant-card a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  font-family: sans-serif;
+}
+  /* Media Queries for Responsive Design */
+  @media (max-width: 1200px) {
+    .restaurant-grid {
+      justify-content: space-between;
+    }
+  
+    .restaurant-card {
+      max-width: 200px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .restaurant-card {
+      max-width: 180px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .restaurant-grid {
+      justify-content: space-between;
+    }
+  
+    .restaurant-card {
+      max-width: 45%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .restaurant-card {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    h3 {
+      font-size: 1rem;
+    }
+  
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .top-components h1{
+        margin-top: 10px;
+        text-align: start;
+        font-size: 35px;
+        margin-bottom: 35px;
+}
+
+
+.top-components {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.top-card-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.top-card {
+    background-color: #fff; 
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-card img{
+    width: 240px;
+    height: 150px;
+    border-radius: 15px;
+    margin-top: 8px;
+}
+
+.top-card a{
+    text-decoration: none;
+}
+
+.foodinfo h3{
+    color: rgb(255, 53, 53);
+    font-size: 18px;
+}
+
+.foodinfo p{
+    color: black;
+    font-size: 17px;
+} */

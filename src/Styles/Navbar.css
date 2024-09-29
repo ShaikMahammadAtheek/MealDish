@@ -1,0 +1,255 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* 
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fc9090;
+    background: linear-gradient(rgba(150, 0, 105, 0.15), rgba(255, 255, 255, 0.6));
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.logo{
+    width: 105px;
+    height:auto;
+    
+}
+.card ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+.card li{
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+    background-attachment: scroll;
+    
+    border-radius: 4px;
+    padding: 5px;
+
+}
+.card a:hover {
+    
+    color: rgb(0, 237, 0); 
+   
+  }
+a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  font-family: sans-serif;
+}
+.links img{
+  width:auto;
+  height: 35px;
+}
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo {
+      width: 120px; 
+    }
+  
+    ul {
+      flex-direction: column;
+      gap: 15px; 
+    }
+  
+    li {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .logo {
+      width: 100px; 
+    }
+  
+    li {
+      font-size: 0.85rem;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    ul {
+      gap: 10px; 
+    }
+  }
+   */
+
+
+
+
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(150, 0, 105, 0.15), rgba(255, 255, 255, 0.6));
+    padding: 20px;
+    border-radius: 8px;
+    /* position: relative; Enable positioning of the dropdown */
+    width: 100%;
+  }
+  
+  .logo {
+    width: 105px;
+    height: auto;
+  }
+  
+  .card ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card li {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-family: sans-serif;
+  }
+  
+  .card a:hover {
+    color: rgb(0, 237, 0);
+  }
+  
+  .links img {
+    width: auto;
+    height: 35px;
+  }
+  .logo{
+    width: 105px;
+    height:70px;
+  }
+  /* Hide the checkbox */
+  .menu-toggle {
+    display: none; /* Hide checkbox visually */
+  }
+  
+  /* Hamburger styles */
+  /* .menu {
+    /* position: relative; 
+  } */
+  
+  .hamburger {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Styling */
+  
+  /* For tablets and smaller screens */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: row; /* Stack elements vertically */
+      align-items: center; /* Center items */
+      text-align: center;
+    }
+  
+    .logo {
+      width: 120px; /* Reduce logo size */
+    }
+  
+    .card ul {
+      background-color: #ebe1e1;
+      flex-direction: column;
+      text-align: center;
+      gap: 15px; /* Adjust spacing */
+      display: none; /* Hide menu by default */
+      position: absolute; /* Position below the logo */
+      top: 100px; /* Adjust this value based on your layout */
+      left: 50%; /* Center the dropdown */
+      width: 100%;
+      transform: translateX(-50%); /* Centering */
+    }
+    .card li{
+      color: white;
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger icon */
+    }
+  
+    /* Show the menu when checkbox is checked */
+    #menu-toggle:checked + .hamburger + .links {
+      display: flex; /* Show menu when checked */
+    }
+  
+    /* Hamburger to "X" animation */
+    #menu-toggle:checked + .hamburger span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    #menu-toggle:checked + .hamburger span:nth-child(2) {
+      opacity: 0; /* Hide the middle span */
+    }
+  
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .logo {
+      width: 100px; /* Further reduce logo size for small screens */
+    }
+  
+    .card li {
+      font-size: 0.85rem;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .card ul {
+      gap: 10px; /* Tighten the gap for smaller mobile screens */
+    }
+  }
+  
